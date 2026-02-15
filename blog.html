@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | David Busso</title>
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Blog personal de David Busso sobre desarrollo web, proyectos reales y aprendizaje en Front End."
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+
+  <body>
+    <!-- Header del Blog -->
+    <header class="blog-header">
+      <h1>Mi Blog</h1>
+      <p>Reflexiones, aprendizajes y proyectos reales en desarrollo web.</p>
+      <a class="btn-volver" href="./index.html">← Volver al portfolio</a>
+    </header>
+
+    <main class="blog-container">
+      <!-- ============================= -->
+      <!-- Sección Artículos -->
+      <!-- ============================= -->
+      <section class="blog-posts">
+        <h2>Artículos</h2>
+
+        <article class="card-blog">
+          <h3>
+            <a href="./post.html"> Cómo estoy aprendiendo desarrollo web </a>
+          </h3>
+
+          <p class="blog-resumen">
+            Empecé aprendiendo lo básico: HTML para estructura, CSS para diseño
+            y JavaScript para darle vida a los proyectos. Pero entendí que la
+            teoría sola no alcanza. Por eso decidí construir proyectos reales
+            mientras estudio y mejorar constantemente mi forma de escribir
+            código.
+          </p>
+
+          <a class="leer-mas" href="./post.html">Leer más →</a>
+        </article>
+      </section>
+
+      <!-- ============================= -->
+      <!-- Sección Proyectos Destacados -->
+      <!-- ============================= -->
+      <section class="blog-proyectos">
+        <h2>Proyectos Destacados</h2>
+
+        <div class="proyectos-container">
+          <!-- Proyecto 1 -->
+          <div class="card-proyecto">
+            <img src="./img/bussomotos-web.png" alt="Sitio web Busso Motos" />
+            <h3>Busso Motos</h3>
+            <p>
+              Sitio web para concesionaria de motos, completamente responsive y
+              optimizado para dispositivos móviles.
+            </p>
+
+            <a
+              href="https://davidbusso95.github.io/busso-motos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver sitio
+            </a>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="card-proyecto">
+            <img
+              src="./img/inversor-app.png"
+              alt="Aplicación web Inversor App"
+            />
+            <h3>Inversor App</h3>
+            <p>
+              Aplicación web para seguimiento de inversiones desarrollada con
+              lógica en JavaScript y almacenamiento local.
+            </p>
+
+            <a
+              href="https://davidbusso95.github.io/inversor-app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver sitio
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+      <p>© <span id="year"></span> David Busso</p>
+    </footer>
+
+    <!-- Script general -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+/* ==============================
+   RESET GLOBAL
+   Normaliza márgenes, paddings y modelo de caja
+   para evitar comportamientos inconsistentes
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   ESTILOS BASE DEL DOCUMENTO
+   Define tipografía principal y colores base
+============================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-blanco);
+  color: var(--color-principal);
+  line-height: 1.6;
+}
+
+/* ==============================
+   MODO OSCURO
+   Se activa agregando la clase .dark al body
+   Cambia fondos y colores para mejor contraste
+============================== */
+
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark header {
+  background-color: #000;
+}
+
+body.dark section {
+  background-color: #1e1e1e;
+}
+
+/* ==============================
+   HEADER PRINCIPAL
+   Contiene presentación y navegación
+============================== */
+
+header {
+  background-color: #1f2933;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Ajustes de jerarquía visual en el header */
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Imagen de perfil responsive */
+
+header img {
+  width: 250px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+   NAVEGACIÓN
+============================== */
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #9fd3c7;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover simple y limpio */
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   BOTÓN CAMBIO DE TEMA
+   Posicionado fijo para acceso rápido
+============================== */
+
+#toggle-theme {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+}
+
+/* Se elimina el outline visual por diseño */
+
+#toggle-theme:focus,
+#toggle-theme:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ==============================
+   SECCIONES GENERALES
+   Contenedor central con ancho máximo
+============================== */
+
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 6px;
+}
+
+/* Títulos de sección con separación visual */
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* ==============================
+   BLOQUE PROYECTO SIMPLE
+   (estructura anterior)
+============================== */
+
+.proyecto {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.proyecto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1f2933;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.proyecto a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   CONTENEDOR DE CARDS DE PROYECTOS
+   Layout mobile first con flexbox
+============================== */
+
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card individual de proyecto */
+
+.card-proyecto {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Imagen dentro de la card */
+
+.card-proyecto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Efecto hover sutil */
+
+.card-proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones dentro de las cards */
+
+.card-proyecto a {
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 6px 12px;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.card-proyecto a:hover {
+  opacity: 0.8;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* ==============================
+   BOTÓN VOLVER ARRIBA
+============================== */
+
+#btn-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 30px;
+  display: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ==============================
+   BOTÓN WHATSAPP FLOTANTE
+============================== */
+
+.wpp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25d366;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+
+/* Estado visible activado por JS */
+
+.wpp-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hover leve */
+
+.wpp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ==============================
+   RESPONSIVE - TABLET / DESKTOP
+============================== */
+
+@media (min-width: 768px) {
+  /* En pantallas mayores, las cards se muestran en fila */
+
+  .proyectos-container {
+    flex-direction: row;
+  }
+
+  .card-proyecto {
+    flex: 1;
+  }
+}

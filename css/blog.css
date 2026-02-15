@@ -1,0 +1,98 @@
+/* ==============================
+   TARJETA DE POST DEL BLOG
+============================== */
+
+/* Contenedor individual de cada artículo */
+.card-blog {
+  background: #f4f4f4; /* Fondo claro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Separación entre tarjetas */
+  transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+/* Animación sutil al pasar el mouse */
+.card-blog:hover {
+  transform: translateY(-5px); /* Se eleva ligeramente */
+}
+
+/* Enlace del título del artículo */
+.card-blog h2 a {
+  text-decoration: none; /* Quita subrayado */
+  color: #111; /* Color oscuro */
+}
+
+/* ==============================
+   TEXTO RESUMEN DEL POST
+============================== */
+
+.blog-resumen {
+  margin: 15px 0; /* Espacio arriba y abajo */
+  line-height: 1.6; /* Mejora legibilidad */
+  color: #444; /* Gris oscuro */
+}
+
+/* ==============================
+   BOTÓN "LEER MÁS"
+============================== */
+
+.leer-mas {
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Más visible */
+  color: #111;
+  transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.leer-mas:hover {
+  opacity: 0.7; /* Ligera transparencia */
+}
+
+/* ==============================
+   HEADER DEL BLOG
+============================== */
+
+.blog-header {
+  text-align: center; /* Centra contenido */
+  padding: 40px 20px; /* Espaciado interno */
+}
+
+/* ==============================
+   BOTÓN VOLVER AL PORTFOLIO
+============================== */
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  text-decoration: none;
+  background: #111; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover botón volver */
+.btn-volver:hover {
+  opacity: 0.8;
+}
+
+/* ==============================
+   CONTENEDOR GENERAL DEL BLOG
+============================== */
+
+.blog-container {
+  padding: 40px 20px;
+  max-width: 1000px; /* Limita ancho en desktop */
+  margin: auto; /* Centra el contenido */
+}
+
+/* Sección de posts */
+.blog-posts {
+  margin-bottom: 60px; /* Espacio antes de proyectos */
+}
+
+/* Sección de proyectos dentro del blog */
+.blog-proyectos {
+  margin-bottom: 60px;
+}

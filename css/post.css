@@ -1,0 +1,28 @@
+/* ==============================
+   CONTENEDOR DEL POST
+============================== */
+
+/* Limita el ancho del artículo y lo centra */
+.post-container {
+  max-width: 800px; /* Ancho cómodo para lectura */
+  margin: 60px auto; /* Centrado vertical y horizontal */
+  padding: 0 20px; /* Espacio lateral en mobile */
+  line-height: 1.8; /* Mejora la legibilidad */
+}
+
+/* ==============================
+   TÍTULO DEL POST
+============================== */
+
+.post-container h1 {
+  margin-bottom: 20px; /* Separación del contenido */
+}
+
+/* ==============================
+   PÁRRAFOS DEL POST
+============================== */
+
+.post-container p {
+  margin-bottom: 20px; /* Espacio entre párrafos */
+  color: #444; /* Gris oscuro suave */
+}
